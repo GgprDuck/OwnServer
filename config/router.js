@@ -8,6 +8,7 @@ router.use(middleware.CookieParser);
 router.use(middleware.Compression);
 router.use(middleware.Helmet);
 router.use(middleware.Cors);
+router.use(middleware.Refresh);
 
 router.get("/", control.getAll);
 

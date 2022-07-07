@@ -1,6 +1,9 @@
 const mongoose = require("mongoose");
 const express = require('express');
 const app = express();
+const router = require('./router.js');
+
+app.use("/v1/user", router);
 
 module.exports = async function databaseConnect(){
     mongoose 
